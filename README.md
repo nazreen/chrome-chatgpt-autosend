@@ -1,5 +1,15 @@
 # ChatGPT Auto-Send for Chrome
 
+> Fork of [amxv/chrome-chatgpt-autosend](https://github.com/amxv/chrome-chatgpt-autosend)
+> by [amxv](https://github.com/amxv), licensed under Apache 2.0.
+>
+> **Changes in this fork:** the original auto-sends for any link containing
+> `autosend=1`, so any web page could submit prompts in your signed-in ChatGPT.
+> This fork requires `autosend` to match a local secret and only sends when
+> Chrome reports the navigation as an omnibox keyword search. Modified files:
+> `content.js`, `manifest.json`, `tests/content.test.cjs`, `README.md`,
+> `.gitignore`. Added: `background.js`, `secret.example.js`.
+
 This tiny Chrome extension turns a Chrome custom site-search shortcut into:
 
 `c` → Space / Tab → type prompt → Enter → **ChatGPT opens a new chat and submits it automatically**

@@ -1,3 +1,5 @@
+// Modified by nazreen from amxv/chrome-chatgpt-autosend: adds secret and
+// omnibox-navigation checks before auto-sending.
 (() => {
   "use strict";
 
